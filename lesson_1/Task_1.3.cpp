@@ -15,15 +15,15 @@ int main()
     }
     if (a > c and c > b and a > b)
     {
-        cout <<a - b;
+        cout << a - b;
     }
-    if(a > c and c > b and a > b)
+    if (a > c and c > b and a > b)
     {
-        cout <<b - a;
+        cout << b - a;
     }
     if (b > a and a > c and b > c)
     {
-        cout <<b - c;
+        cout << b - c;
     }
     if (c > a and a > b and c > b)
     {
