@@ -5,25 +5,13 @@ using namespace std;
 int main()
 {
     int a, b, c;
-    cout << "Vvedite 1 chislo: ";
+    cout << "Enter the first number: ";
     cin >> a;
-    cout << "Vvedite 2 chislo: ";
+    cout << "Enter the second number: ";
     cin >> b;
-    cout << "Vvedite 3 chislo: ";
+    cout << "Enter the third number: ";
     cin >> c;
     if (a * b == c or a * c == b or c * b == a)
-    {
-        cout << "yes";
-    }
-    if (a + b == c or a + c == b or c + b == a)
-    {
-        cout << "yes";
-    }
-    if (a - b == c or a - c == b or c - b == a)
-    {
-        cout << "yes";
-    }
-    if (a / b == c or a / c == b or c / b == a)
     {
         cout << "yes";
     }
