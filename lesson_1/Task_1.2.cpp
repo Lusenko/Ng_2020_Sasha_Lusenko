@@ -14,7 +14,7 @@ int main()
 	{
 		cout << "yes";
 	}
-	if (n * m > k)
+	else 
 	{
 		cout << "no";
 	}

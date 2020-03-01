@@ -6,11 +6,12 @@ int main()
 {
 	int a, b, d, c;
 	float x1, x2;
-	cout << "Enter a: ";
+	cout << "\t\t\t\t****quadratic equations****\n";
+	cout << "Enter first number ";
 	cin >> a;
-	cout << "Enter b: ";
+	cout << "Enter second number: ";
 	cin >> b;
-	cout << "Enter c: ";
+	cout << "Enter the third number: ";
 	cin >> c;
 	d = (b * b) - 4 * a * c;
 	if (d > 0)
@@ -27,5 +28,5 @@ int main()
 	}
 	if (d < 0) {
 		cout << "No roots";
-	}		
+	}
 }
