@@ -1,4 +1,4 @@
-#include<iostream>
+##include<iostream>
 using namespace std;
 int main()
 {
@@ -8,7 +8,8 @@ int main()
 	while (i <= number)
 	{
 		cout << i;
-		cout << " ";
 		i++;
+		cout << ",";
 	}
+	cout << i;
 }
