@@ -19,11 +19,14 @@ int main()
         if (school == number[c])
         {
             not_school = 1;
-            cout << "I know this school!";
-        }
+        }      
     }
     if (not_school == 0)
     {
         cout << "I don't know this school";
+    }
+    if (not_school == 1)
+    {
+        cout << "I know this school!";
     }
 }
