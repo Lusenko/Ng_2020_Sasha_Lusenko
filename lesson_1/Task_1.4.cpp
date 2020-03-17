@@ -12,18 +12,23 @@ int main()
 	cin >> sol;
 	if (sol == 1)
 	{
-		cout <<"Result: "<< number1 + number2;
+		cout << "Result: " << number1 + number2;
 	}
 	if (sol == 2)
 	{
-		cout <<"Result: "<< number1 - number2;
+		cout << "Result: " << number1 - number2;
 	}
 	if (sol == 3)
 	{
-		cout <<"Result: "<< number1 * number2;
+		cout << "Result: " << number1 * number2;
 	}
 	if (sol == 4)
 	{
-		cout <<"Result: "<< number1 / number2;
+		cout << "Result: " << number1 / number2;
 	}
+	if (sol > 4)
+	{
+		cout << "Error!!!";
+	}
+
 }
