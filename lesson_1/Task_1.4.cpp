@@ -26,9 +26,8 @@ int main()
 	{
 		cout << "Result: " << number1 / number2;
 	}
-	if (sol > 4)
+	if (sol > 4 || sol < 0)
 	{
 		cout << "Error!!!";
-	}
-
+	}	
 }
