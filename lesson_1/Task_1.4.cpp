@@ -8,26 +8,24 @@ int main()
 	cin >> number1;
 	cout << "Enter second number: ";
 	cin >> number2;
-	cout << "What will you choose (+), (-), (*), (/): ";
+	cout << "What would you choose (+), (-), (*), (/): ";
 	cin >> sol;
-	if (sol == 1)
+	switch (sol)
 	{
-		cout << "Result: " << number1 + number2;
-	}
-	if (sol == 2)
-	{
-		cout << "Result: " << number1 - number2;
-	}
-	if (sol == 3)
-	{
-		cout << "Result: " << number1 * number2;
-	}
-	if (sol == 4)
-	{
-		cout << "Result: " << number1 / number2;
-	}
-	if (sol > 4 || sol < 0)
-	{
-		cout << "Error!!!";
+		case 1:
+			cout << "Result: " << number1 + number2;
+			break;
+		case 2:
+			cout << "Result: " << number1 - number2;
+			break;
+		case 3:
+			cout << "Result: " << number1 * number2;
+			break;
+		case 4:
+			cout << "Result: " << number1 / number2;
+			break;
+		default:
+			cout << "Error!!!";
+			break;
 	}	
 }
