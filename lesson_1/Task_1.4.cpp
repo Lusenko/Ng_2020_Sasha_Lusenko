@@ -1,31 +1,40 @@
-#include<iostream>
+#include <iostream>
+
 using namespace std;
+
 int main()
 {
-	int number1, number2, sol;
-	cout << "\t\t\t\t\t****calculator***\n";
-	cout << "Enter first number: ";
-	cin >> number1;
-	cout << "Enter second number: ";
-	cin >> number2;
-	cout << "What would you choose (+), (-), (*), (/): ";
-	cin >> sol;
-	switch (sol)
-	{
-		case 1:
-			cout << "Result: " << number1 + number2;
-			break;
-		case 2:
-			cout << "Result: " << number1 - number2;
-			break;
-		case 3:
-			cout << "Result: " << number1 * number2;
-			break;
-		case 4:
-			cout << "Result: " << number1 / number2;
-			break;
-		default:
-			cout << "Error!!!";
-			break;
-	}	
+    int num[5], row = 0, i = 0, max = 0, cou = 0;
+    while (i < 5)
+    {
+        cout << "Zvezdochek " << i + 1 << " -om stolbike: ";
+        cin >> num[i];
+        i++;
+        if (max < num[cou])
+        {
+            max = num[cou];
+        }
+        cou++;
+    }
+    
+    cou = 0;
+    while (cou < max)
+    {
+        row = 0;
+        while (row < 5)
+        {
+            if (cou < num[row])
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+            row++;
+        }
+        cout << endl;
+        cou++;
+    }
+    cout << "\n";
 }
