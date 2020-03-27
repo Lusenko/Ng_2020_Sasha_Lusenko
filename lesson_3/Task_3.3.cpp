@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int num[20], index = 0, space = 0, i = 0, maxi = 0;
+    int num[20], index = 0, space = 0, iter = 0, maxi = 0;
 
     while (index < 20)
     {
@@ -19,18 +19,18 @@ int main()
 
     cout << endl;
 
-    while (i < index)
+    while (iter < index)
     {
-        for (space = 0; space < (maxi - num[i]) / 2; space++)
+        for (space = 0; space < (maxi - num[iter]) / 2; space++)
         {
             cout << " ";
         }
 
-        for (space = 0; space < num[i]; space++)
+        for (space = 0; space < num[iter]; space++)
         {
             cout << "*";
         }
         cout << endl;
-        i++;
+        iter++;
     }
 }
