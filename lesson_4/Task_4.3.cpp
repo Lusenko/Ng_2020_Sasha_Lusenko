@@ -3,21 +3,21 @@ using namespace std;
 int main()
 {
 	char array[100];
-	int smo, big, i = 0;
+	int smo, big, index = 0;
 	cout << "Enter string: ";
 	cin.getline(array, 100);
 
-	while (array[i] != 0)
+	while (array[index] != 0)
 	{
-		if (array[i] >= 'a' && array[i] <= 'z')
-			array[i] = array[i] - 32;
-		i++;
+		if (array[index] >= 'a' && array[index] <= 'z')
+			array[index] = array[index] - 32;
+		index++;
 	}
-	i = 0;
+	index = 0;
 	cout << endl;
-	while (array[i] != 0)
+	while (array[index] != 0)
 	{
-		cout << array[i];
-		i++;
+		cout << array[index];
+		index++;
 	}
 }
