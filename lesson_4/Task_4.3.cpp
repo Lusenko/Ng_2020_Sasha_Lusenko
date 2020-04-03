@@ -14,10 +14,6 @@ int main()
 		index++;
 	}
 	index = 0;
-	cout << endl;
-	while (array[index] != 0)
-	{
-		cout << array[index];
-		index++;
-	}
+	cout << endl;	
+		cout << array;	
 }
