@@ -14,6 +14,6 @@ int main()
 		index++;
 	}
 	index = 0;
-	cout << endl;	
-		cout << array;	
+	cout << endl;
+	cout << array;
 }
