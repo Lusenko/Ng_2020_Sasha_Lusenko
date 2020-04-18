@@ -6,7 +6,7 @@ int main()
 	int wor = 0, len = 0, lon = 0, n = 0, dif = 0;
 
 	cout << "Enter some words in string: ";
-	cin.getline(array,100);
+	cin.getline(array, 100);
 
 	while (array[wor] != 0)
 	{
@@ -23,17 +23,17 @@ int main()
 		}
 		if (array[wor + 1] == 0)
 		{
-			if (len > lon && array[wor + 1] == 0)
+			if (len > lon)
 			{
 				lon = len;
-				dif = wor - lon;
+				dif = wor - lon + 1;
 			}
 			len = 0;
 		}
 		wor++;
 	}
-	cout << endl <<"The longest word is: ";
-	for (wor = 0; wor <= lon; wor++)
+	cout << endl << "The longest word is: ";
+	for (wor = 0; wor < lon; wor++)
 	{
 		cout << array[dif];
 		dif++;
